@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>11월 패밀리 좌담회</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/colorbox/colorbox.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.colorbox.js"></script>
+  <script src="js/swiper.js"></script>  
+  <script>
+  	$(document).ready(function(){
+  		$("#fullpage").fullpage({
+  			menu: "#topmenu",
+  			navigation:true,
+  			slideNavigation:true
+  		});
+
+      function move(){
+        var num = current * 540 * -1;
+        // $(".container>ul").css("left",num);
+        $(".container>ul").stop().animate({left:num},300);
+      };
+
+      $(".modal").colorbox({
+        rel:"modal"
+      });
+      $(".youtube").colorbox({
+        iframe:true,
+        innerWidth:1500,
+        innerHeight:800
+      });
+  	});
+  </script>
+
+  <style>
+    .swiper-container {
+      width: 100%;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide{
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+    }
+    .swiperimg{width: 400px; height: 400px;}
+
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .bx-wrapper .bx-prev{
+      left: -40px;
+    }
+
+    .bx-wrapper .bx-next{
+      right: -40px;
+    }
+    
+    /*행복대화*/
+    .container{margin-top: 150px;}
+    .box{width: 1120px; margin: 0 auto;}
+    #boxa{float: left; width: 200px; height: 200px; margin-right: 30px; margin-bottom: 30px;}
+    #boxa:last-child{margin-right: 0px;}
+    #imgbox{display: block; width: 200px; height: 200px;}   
+  </style>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="navTop">
+      <ul id="topmenu" class="clearfix">
+        <li><a href="#1st">메인</a></li>
+        <li><a href="#2st"><여는글></a></li>
+        <li><a href="#3st"><어서></a></li>
+        <li><a href="#4st"><학회역사></a></li>
+        <li><a href="#5st"><행복대화></a></li>
+        <li><a href="#6st"><참석간부 인사></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="fullpage">
+    <div class="section page" id="page1" data-anchor="1st">
+    </div>
+
+    <div class="section page" id="page2" data-anchor="2st"> </div>
+
+    <div class="section page" id="page3" data-anchor="3st">    
+    </div>
+
+    <div class="section page" id="page4" data-anchor="4st">   
+      <a href="https://www.ksgi.or.kr/media/board/view.ksgi?code=SOKAHIS&id=171&page=1&sc=&sk=" class="link" target="_blank"></a> 
+    </div>
+
+    <div class="section page sliderWrap" id="page5" data-anchor="5st">
+      <div class="container">
+        <div class="box clearfix">
+          <a href="images/a (1).png" id="boxa" class="youtube"><img src="images/1.png" alt="#" id="imgbox"></a>
+          <a href="images/a (2).png" id="boxa" class="youtube"><img src="images/2.png" alt="#" id="imgbox"></a>
+          <a href="images/a (3).png" id="boxa" class="youtube"><img src="images/3.png" alt="#" id="imgbox"></a>
+          <a href="images/a (4).png" id="boxa" class="youtube"><img src="images/4.png" alt="#" id="imgbox"></a>
+          <a href="images/a (5).png" id="boxa" class="youtube"><img src="images/5.png" alt="#" id="imgbox"></a>
+        </div>
+        <div class="box clearfix">
+          <a href="images/a (6).png" id="boxa" class="youtube"><img src="images/6.png" alt="#" id="imgbox"></a>
+          <a href="images/a (7).png" id="boxa" class="youtube"><img src="images/7.png" alt="#" id="imgbox"></a>
+          <a href="images/a (8).png" id="boxa" class="youtube"><img src="images/8.png" alt="#" id="imgbox"></a>
+          <a href="images/a (9).png" id="boxa" class="youtube"><img src="images/9.png" alt="#" id="imgbox"></a>
+          <a href="images/a (10).png" id="boxa" class="youtube"><img src="images/10.png" alt="#" id="imgbox"></a>
+        </div>
+        <div class="box clearfix">
+          <a href="images/a (11).png" id="boxa" class="youtube"><img src="images/11.png" alt="#" id="imgbox"></a>
+          <a href="images/a (12).png" id="boxa" class="youtube"><img src="images/12.png" alt="#" id="imgbox"></a>
+          <a href="images/a (13).png" id="boxa" class="youtube"><img src="images/13.png" alt="#" id="imgbox"></a>
+          <a href="images/a (14).png" id="boxa" class="youtube"><img src="images/14.png" alt="#" id="imgbox"></a>
+          <a href="images/a (15).png" id="boxa" class="youtube"><img src="images/15.png" alt="#" id="imgbox"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section page" id="page6" data-anchor="6st"> 
+    </div>
+  </div> 
+</body>
+</html>
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+ 
